@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());//so whenever we get a request,we'll be able to read it.
 app.use(cookieParser());
 
-app.use(express.static('client/build'));
+app.use(express.static('client/guitar/build'));
 
 //cloudinary for img upload
 cloudinary.config({
@@ -512,7 +512,7 @@ app.post('/api/site/site_data',auth,admin,(req,res)=>{
 if(process.env.NODE_ENV === 'production'){
     const path = require('path');
     app.get('/*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'../client','build','index.html'))
+        res.sendFile(path.resolve('F:/guitar/client/register/build/index.html'))
 
     })
 }
