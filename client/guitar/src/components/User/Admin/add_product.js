@@ -246,7 +246,7 @@ class AddProduct extends Component {
         const formdata = this.state.formdata;
 
         this.props.dispatch(getBrands()).then( response => {
-            const newFormData = populateOptionFields(formdata,this.props.products.brands2,'brand');
+            const newFormData = populateOptionFields(formdata,this.props.products.brands,'brand');
             this.updateFields(newFormData);
             // console.log("newFormdata of brands: ",)test!
         })
