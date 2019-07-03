@@ -180,7 +180,7 @@ export function clearProduct(){
 
 export function getBrands(){
 
-    const request = axios.get(`${PRODUCT_SERVER}/get_brands`)
+    const request = axios.get(`${PRODUCT_SERVER}/brands`)
                 .then(response => response.data );
 
     return {
@@ -231,7 +231,7 @@ export function addWood(dataToSubmit, existingWoods){
 
 
 export function getWoods(){
-    const request = axios.get(`${PRODUCT_SERVER}/get_woods`)
+    const request = axios.get(`${PRODUCT_SERVER}/woods`)
     .then(response => response.data );
 
     return {

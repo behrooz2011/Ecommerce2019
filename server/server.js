@@ -196,7 +196,7 @@ app.post('/api/product/wood',auth,admin,(req,res)=>{
 	})
 });
 
-app.get('/api/product/get_woods',(req,res)=>{
+app.get('/api/product/woods',(req,res)=>{
 	Wood.find({},(err,woods)=>{
 		if(err) return res.status(400).send(err);
 			res.status(200).send(woods)
@@ -221,7 +221,7 @@ app.post('/api/product/brand',auth,admin,(req,res)=>{
 	})
 });
 
-app.get('/api/product/get_brands',(req,res)=>{
+app.get('/api/product/brands',(req,res)=>{
 	Brand.find({},(err,brands)=>{
 		if(err) return res.status(400).send(err);
 		res.status(200).send(brands)

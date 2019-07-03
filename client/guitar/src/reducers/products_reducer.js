@@ -39,7 +39,7 @@ export default function(state={},action){
         case GET_PRODUCTS_BY_ARRIVAL:
             return {...state, byArrival:  action.payload }
         case GET_BRANDS:
-            return {...state, brands2: action.payload }
+            return {...state, brands: action.payload }
         case ADD_BRAND:
             return {
                 ...state, 
